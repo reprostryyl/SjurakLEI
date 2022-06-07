@@ -1,7 +1,6 @@
 id: ssl-network-extender
 
 info:
-  name: Check Point SSL Network Extender Login
   author: idealphase
   severity: info
   description: SSL Network Extender is a secure connectivity framework for remote access to a corporate network. SSL Network Extender uses a thin VPN client installed on the user's remote computer that connects to
@@ -22,9 +21,6 @@ requests:
     matchers-condition: and
     matchers:
       - type: word
-        part: body
-        words:
-          - "<TITLE>SSL Network Extender Login</TITLE>"
 
       - type: status
         status:
